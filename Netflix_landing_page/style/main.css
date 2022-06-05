@@ -1,0 +1,137 @@
+:root {
+    --vermelho: #E50914; 
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+header .logo {
+    width: 9rem;
+    margin-left: 20px;
+    margin-right: 45px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.scrolling-active {
+    background-color: var(--preto);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 1);
+}
+
+nav a {
+    font-family: 'Circular Std', sans-serif;
+    text-decoration: none;
+    color: #DCDCDC;
+    margin-right: 30px;
+}
+
+nav a:hover {
+    color: white;
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+/*filme principal*/
+.filme-principal {
+    font-size: 20px;
+    font-family: 'Circular Std', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(../img/capa-avatar.jpg);
+    height: 800px;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin: 15px 0 45px 15px;
+    width: 33%;
+}
+
+.filme-principal .container {
+    margin-left: 50px;
+}
+
+.filme-principal .titulo {
+    margin-top: 5%;
+    font-size: 45px;
+}
+
+.botao {
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Circular Std', sans-serif;
+    padding: 10px 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.1s;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: --preto;
+    color: white;
+
+}
+
+.botoes {
+    margin-left: 15px;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+footer .container {
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i {
+    color: white;
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+.social-links {
+    height: 40px;
+    margin-bottom: 100px;
+}

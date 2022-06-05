@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css" />
+
+    <title>Netflix</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="#">
+          <img class="logo" src="img/netflix_logo_transparent.png" />
+        </a>
+        <nav>
+          <a href="#"> Início</a>
+          <a href="#"> Séries</a>
+          <a href="#"> Filmes</a>
+          <a href="#"> Bombando</a>
+          <a href="#"> Minha lista</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="filme-principal">
+        <div class="container">
+          <h3 class="titulo">Avatar: A Lenda de Aang</h3>
+          <p class="descricao">
+            Aang é um menino de 12 anos que descobre ser o Avatar, mestre
+            responsável por garantir o equilíbrio entre os quatro elementos e
+            suas respectivas nações, mantendo o planeta em paz.
+          </p>
+          <div class="botoes">
+            <button role="button" class="botao">
+              <i class="fa-solid fa-play"></i>Assistir
+            </button>
+            <button role="button" class="botao">
+              <i class="fa-solid fa-circle-info"></i>Mais informações
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="carrosel-filmes">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="box-filme" src="img/mini1.jpg" alt="pôster da série" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini2.jpg" alt="pôster da série" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini3.jpg" alt="pôster da série" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini4.jpg" alt="pôster da série" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini5.jpg" alt="pôster da série" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini6.jpg" alt="pôster da série" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini7.jpg" alt="pôster da série" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini8.jpg" alt="pôster da série" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini9.jpg" alt="pôster da série" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini10.jpg" alt="pôster da série" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="https://pt-br.facebook.com/netflixbrasil/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/netflixbrasil/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://twitter.com/netflix"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCWOA1ZGywLbqmigxE4Qlvuw"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/e3a2e3434c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle("scrolling-active", windowPosition);
+      });
+    </script>
+  </body>
+</html>
